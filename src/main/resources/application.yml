@@ -5,10 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/spring-cloud-samples/config-repo
-          repos:
-            - patterns: multi-repo-demo-*
-              uri: https://github.com/spring-cloud-samples/config-repo
+          uri: https://github.com/jrsaravanan/config-server-repo
+          basedir: target/config
 
 server:
   port: 8888
@@ -23,4 +21,4 @@ endpoints:
 logging:
   levels:
     org.springframework.boot.env.PropertySourcesLoader: TRACE
-org.springframework.web: DEBUG
+    org.springframework.web: DEBUG
